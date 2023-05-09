@@ -1,0 +1,98 @@
+{
+  "Proveedores": [
+    {
+      "nombre": "exito"
+    }
+  ],
+  "Roles": [
+    {
+      "id": 1,
+      "descripcion": "empleado"
+    },
+    {
+      "id": 2,
+      "descripcion": "administrador"
+    }
+  ],
+  "Usuarios": [
+    {
+      "id": 1000225231,
+      "img": "",
+      "nombre": "javier david",
+      "apellido": "campo suarez",
+      "direccion": "calle 21 #28-25",
+      "telefono": 3147309878
+    }
+  ],
+  "Categorias": [
+    {
+      "id": 1,
+      "nombre": "comida",
+      "descripcion": "en esta seccion se encontratan todo lo relacionado con alimentos"
+    },
+    {
+      "id": 7,
+      "nombre": "comida",
+      "descripcion": "en esta seccion se encontratan todo lo relacionado con alimentos"
+    },
+    {
+      "id": 79,
+      "nombre": "comida",
+      "descripcion": "en esta seccion se encontratan todo lo relacionado con alimentos"
+    },
+    {
+      "id": 78,
+      "nombre": "comida",
+      "descripcion": "en esta seccion se encontratan todo lo relacionado con alimentos"
+    },
+    {
+      "id": 4,
+      "nombre": "comida",
+      "descripcion": "en esta seccion se encontratan todo lo relacionado con alimentos"
+    }
+  ],
+  "Productos": [
+    {
+      "id": 1,
+      "nombre": "empanada",
+      "precio": 3500,
+      "stock": 40,
+      "categoriaId": 1
+    }
+  ],
+  "Empleados": [
+    {
+      "id": 1,
+      "user": "javiercampo1000225231",
+      "password": "1000225231",
+      "email": "campo.javier1502@gmail.com",
+      "rolId": 2,
+      "usuarioId": 1000225231
+    }
+  ],
+  "Compras": [
+    {
+      "id": 1,
+      "fecha": "09-05-2023",
+      "cantidad": 23,
+      "proveedorId": 1,
+      "productoId": 1
+    }
+  ],
+  "Facturas": [
+    {
+      "id": 1,
+      "fecha": "09-05-2023",
+      "usuarioId": 1000225231,
+      "empleadoId": 1
+    }
+  ],
+  "DetallesFacturas": [
+    {
+      "id": 1,
+      "cantidad": 4,
+      "facturaId": 1,
+      "productoId": 1
+    }
+  ]
+}

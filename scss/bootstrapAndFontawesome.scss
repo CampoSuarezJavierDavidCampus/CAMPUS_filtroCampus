@@ -1,0 +1,17 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$black:#131a2a;
+$dark:#233249;
+$primary:#0ddbb8;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+@import 'util/fontawesome/fontawesome.scss';
+@import 'util/fontawesome/brands.scss';
+
+@import 'util/fontawesome/solid.scss';
+@import 'util/fontawesome/regular.scss';
+

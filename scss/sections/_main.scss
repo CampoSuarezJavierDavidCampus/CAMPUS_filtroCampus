@@ -1,0 +1,46 @@
+.main{
+    border: solid  #fff;
+    border-radius: 2rem;    
+
+    &__title{        
+        &:hover{
+            color: #f8c016 !important;
+        }
+        background: transparent;
+        border: none;
+    }
+
+    &__container{
+        height: 60vh;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
+    &__table{
+        min-width: 48rem;
+        width: 100%;
+        &-row{        
+            &-cell{
+                padding-top: 1rem;
+                color: #fff;
+                text-align: center;
+                &--collumn{
+                    color: #f8c016;
+                }
+            }
+
+            &-cell:first-child{
+                color: #f8c016;
+            }
+
+            &:hover{
+                background: #233249;
+            }
+
+        }
+        &-head{
+            position: sticky;
+            top: 0;
+        }
+    }
+}

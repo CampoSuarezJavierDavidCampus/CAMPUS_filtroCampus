@@ -1,0 +1,17 @@
+{
+  "name": "filtrocampus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --w db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha3",
+    "json-server": "^0.17.3",
+    "moment": "^2.29.4"
+  }
+}

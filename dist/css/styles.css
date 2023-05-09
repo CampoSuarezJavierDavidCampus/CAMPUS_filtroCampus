@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
+/* font-family: 'Sigmar', cursive; */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  display: grid;
+  font-family: "Sigmar", cursive;
+  font-weight: 400;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  grid-template-areas: "aside header header header" "aside main main main" "aside main main main" "aside main main main" "aside footer footer footer";
+  grid-template-columns: auto 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr auto;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+  max-width: 20rem !important;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.aside__nav-item {
+  list-style: none;
+}
+.aside__nav-item-link {
+  text-decoration: none;
+}
+.aside__nav-item-link:hover {
+  color: #f8c016 !important;
+}
+
+@media (min-width: 992px) {
+  .aside {
+    position: relative !important;
+    visibility: visible !important;
+    opacity: 1;
+    transform: none !important;
+  }
+}
+.main {
+  border: solid #fff;
+  border-radius: 2rem;
+}
+.main__title {
+  background: transparent;
+  border: none;
+}
+.main__title:hover {
+  color: #f8c016 !important;
+}
+.main__container {
+  height: 60vh;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.main__table {
+  min-width: 48rem;
+  width: 100%;
+}
+.main__table-row-cell {
+  padding-top: 1rem;
+  color: #fff;
+  text-align: center;
+}
+.main__table-row-cell--collumn {
+  color: #f8c016;
+}
+.main__table-row-cell:first-child {
+  color: #f8c016;
+}
+.main__table-row:hover {
+  background: #233249;
+}
+.main__table-head {
+  position: sticky;
+  top: 0;
+}/*# sourceMappingURL=styles.css.map */

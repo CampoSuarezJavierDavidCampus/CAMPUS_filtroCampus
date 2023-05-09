@@ -1,0 +1,23 @@
+.aside{
+    &__nav{
+        &-item{
+            list-style: none;
+            &-link{
+                text-decoration: none;
+                &:hover{
+                    color: #f8c016 !important;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (min-width: 992px) { 
+    .aside{
+        position: relative !important;
+        visibility: visible !important;
+        opacity: 1;
+        transform: none!important;
+    }
+}

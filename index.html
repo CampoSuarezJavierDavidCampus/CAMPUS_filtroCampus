@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/bootstrapAndFontawesome.css">
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <script src="https://momentjs.com/downloads/moment.js" defer></script>
+    <script src="dist/js/main.js" type="module" defer></script>
+</head>
+<body>
+    <header class="header bg-dark pe-lg-5 d-flex justify-content-between flex-wrap-reverse">
+        <h1 class="header__title fs-1 py-4 px-3 text-warning bg-black my-0">SISTEMA DE FACTURACION Y MARKETING </h1>
+        
+        <nav class="header__nav fs-2 col-lg-2  justify-content-evenly align-items-center d-flex py-3">
+            <a class="header__nav-link d-lg-none mx-2 bg-white text-black px-4 rounded-pill" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <a class="header__nav-link d-none d-lg-block" href="#" >
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a class="header__nav-link d-none d-lg-block" href="#">
+                <i class="fa-solid fa-bell"></i>
+            </a>
+            <a class="header__nav-link d-none d-lg-block" href="#">
+                <i class="fa-solid fa-camera"></i>
+            </a>
+        </nav>
+    </header>
+    <main class="main bg-black p-4 border-white border-4">
+        
+        <section class="main__catalogo">            
+            <button type="button" class="main__title text-white mb-4 fs-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fa-solid fa-plus bg-primary rounded-pill px-3 text-dark"></i>
+                <span>CATEGORIAS</span>
+            </button>
+  
+            <!-- Modal -->
+            <div class="modal fade main__title-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <form class="modal-content" id="agregar">
+                        <div class="modal-header bg-primary">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body row">
+                            <div class="form-floating mb-3 col-md-6 col-xl-4">
+                                <input type="text" class="form-control" name="nombre">
+                                <label for="floatingInput">Nombre de la categoria</label>
+                            </div>                         
+                            <div class="form-floating col-xl-6">
+                                <textarea class="form-control" name="descripcion" rows="30" placeholder="ingresa alguna descripcion" id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Description De lA cATEGORIA</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" >Cerrar</button>
+                            <button type="submit" class="btn btn-warning">Enviar registro</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <article class="main__container">
+                <table class="main__table">
+                    <thead class="main__table-head bg-dark border border-white border-4">
+                    </thead>
+                    <tbody class="main__table-body fs-4">
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+    <aside class="aside bg-black px-3 offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <picture class="offcanvas-header">
+            <img class="aside__logo w-100 my-5 " src="https://campuslands.com/img/logoWhite.png" alt="">
+        </picture>
+        
+        <ul class="aside__nav offcanvas-body">
+            <li class="aside__nav-item">                
+                <a class="aside__nav-item-link text-white fs-3 d-block mt-3" href="#">
+                    <i class="fa-solid fa-certificate text-primary"></i>
+                    Categorias
+                </a>
+            </li>
+            <li class="aside__nav-item">                
+                <a class="aside__nav-item-link text-white fs-3 d-block mt-3" href="#">
+                    <i class="fa-solid fa-truck text-primary"></i>
+                    Productos
+                </a>
+            </li>
+            <li class="aside__nav-item">                
+                <a class="aside__nav-item-link text-white fs-3 d-block mt-3" href="#">
+                    <i class="fa-solid fa-user-secret text-primary"></i>
+                    Clientes
+                </a>
+            </li>
+            <li class="aside__nav-item">                
+                <a class="aside__nav-item-link text-white fs-3 d-block mt-3" href="#">
+                    <i class="fa-solid fa-user-tie text-primary"></i>
+                    usuarios
+                </a>
+            </li>
+            <li class="aside__nav-item">                
+                <a class="aside__nav-item-link text-white fs-3 d-block mt-3" href="#">
+                    <i class="fa-solid fa-sack-dollar text-primary"></i>
+                    ventas
+                </a>
+            </li>
+            <li class="aside__nav-item">                
+                <a class="aside__nav-item-link text-white fs-3 d-block mt-3" href="#">
+                    <i class="fa-solid fa-cash-register text-primary"></i>
+                    campras
+                </a>
+            </li>
+            <li class="aside__nav-item">                
+                <a class="aside__nav-item-link text-white fs-3 d-block mt-3" href="#">
+                    <i class="fa-regular fa-file-lines text-primary"></i>
+                    reportes
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <footer></footer>    
+</body>
+</html>
